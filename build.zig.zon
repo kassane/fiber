@@ -1,0 +1,11 @@
+.{
+    .name = "fiber",
+    .version = "1.83.0",
+    .license = "BSL-1.0",
+    .dependencies = .{
+        .context = .{
+            .url = "https://github.com/kassane/context/archive/f56bd5b0264969985fdc3d2928973d5d7df69dac.tar.gz",
+            .hash = "12203ac3d0793c56e28593bf34c50d12517a3962692323db28723c89214fdf8a7a11",
+        },
+    },
+}
