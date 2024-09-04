@@ -23,15 +23,13 @@ jobs:
           # - x86_64-windows-msvc
           # - aarch64-windows
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      - uses: goto-bus-stop/setup-zig@v2
-        with:
-          version: 0.11.0
+      - uses: mlugg/setup-zig@v1
 
       - name: Build Summary ${{ matrix.targets }}
         run: zig build -DTests --summary all -freference-trace -Dtarget=${{ matrix.targets }}

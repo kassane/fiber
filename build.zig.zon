@@ -1,11 +1,12 @@
 .{
     .name = "fiber",
-    .version = "1.83.0",
+    .version = "1.86.0",
     .license = "BSL-1.0",
     .dependencies = .{
-        .context = .{
-            .url = "https://github.com/kassane/context/archive/f56bd5b0264969985fdc3d2928973d5d7df69dac.tar.gz",
-            .hash = "12203ac3d0793c56e28593bf34c50d12517a3962692323db28723c89214fdf8a7a11",
+        .boost = .{
+            .url = "git+https://github.com/allyourcodebase/boost-libraries-zig#88476265cab52ca4c2ea35b93ed27d5df07c37e5",
+            .hash = "122033ce4287bc96cec01bd8573cfda28d3ef3da9136b77dc85e67828f2811796a47",
         },
     },
+    .paths = .{""},
 }

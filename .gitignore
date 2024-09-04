@@ -5,5 +5,4 @@ doc\html
 cscope.*
 examples/cuda/multiple_streams*
 examples/cuda/single_stream*
-/zig-cache/
-/zig-out/
+*zig-*/
